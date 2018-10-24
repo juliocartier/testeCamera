@@ -7,6 +7,10 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+import { Camera } from '@ionic-native/camera';
+//import { cv } from 'opencv.js';
+
+
 @NgModule({
   declarations: [
     MyApp,
@@ -24,6 +28,8 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
+    Camera,
+    //cv,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
